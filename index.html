@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ar" >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Jquery</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <!-- Start Header -->
+    <!-- Start Nav -->
+ <header id="home">
+    <nav class="navbar navbar-expand-lg navbar-light shadow" id="navbar-example">
+        <div class="container">
+          <div class="nav-image">
+            <img class="navbar-brand w-100" src="./images/WhatsApp_Image_2024-08-16_at_12.28.04-removebg.png"  alt="">
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item  mx-auto">
+                <a class="nav-link mx-1 active " aria-current="page" href="#home">الرئيسية</a>
+              </li>
+              <li class="nav-item   mx-auto">
+                <a class="nav-link mx-1" href="#About">من نحن</a>
+              </li>
+              <li class="nav-item   mx-auto">
+                <a class="nav-link mx-1" href="#Product">منتجاتنا</a>
+              </li>
+              <li class="nav-item   mx-auto">
+                <a class="nav-link mx-1" href="#">الأسئلة المتكررة</a>
+              </li>
+              <li class="nav-item mx-auto ">
+                <a class="nav-link mx-1" href="#Contant">اتصل بنا</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="home-content container h-100 d-flex align-items-center ">
+        <div class="content-box bg-white h-50 py-3 px-3 col-12 col-md-7 col-lg-5">
+            <div class="contnet w-100 h-100 pt-4 px-4">
+               <div>
+                <h1>El Barka Plast </h1>
+                <ul id="options">
+                        <li><span  id="Plastic"></span></li>
+                        <li > <span id="Spoons"></span></li>
+                        <li > <span id="Forks"></span></li>
+                </ul>
+               </div>
+            </div>
+        </div>
+      </div>
+ </header>
+    <!-- End Nav -->
+    <!-- End Header -->
+    <!-- Start our product -->
+    <section id="Product" class="py-5">
+        <div class="container">
+            <div class="product-title text-center mb-4">
+                <h2 class="h1 py-3 position-relative">منتجاتنا</h2>
+            </div>
+            <div class="porduct-items row gy-4">
+                <div class="col-lg-4 col-md-6 position-relative ">
+                    <div class="product-image rounded-2 ">
+                        <img src="images/WhatsApp Image 2024-08-16 at 12.26.38.jpeg" alt="" class="w-100">
+                    </div>
+                    <button class="btn shadow">عرض طلب سعر</button>
+                </div>
+                <div class="col-lg-4 col-md-6 position-relative ">
+                    <div class="product-image rounded-2 ">
+                        <img src="images/PHOTO-2024-08-16-12-26-34.jpg" alt="" class="w-100">
+                    </div>
+                    <button class="btn shadow">عرض طلب سعر</button>
+                </div>
+                <div class="col-lg-4 col-md-6 position-relative ">
+                    <div class="product-image rounded-2 ">
+                        <img src="images/PHOTO-2024-08-16-12-26-36.jpg" alt="" class="w-100">
+                    </div>
+                    <button class="btn shadow">عرض طلب سعر</button>
+                </div>
+                <div class="col-lg-4 col-md-6 position-relative ">
+                    <div class="product-image rounded-2 ">
+                        <img src="./images/PHOTO-2024-08-16-12-26-36 2.jpg" alt="" class="w-100">
+                    </div>
+                    <button class="btn shadow">عرض طلب سعر</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End our product -->
+    <!-- Start Contact -->
+    <section id="Contant" class="py-5"> 
+        <div class="container">
+            <div class="product-title text-center mb-4">
+                <h2 class="h1 py-3 position-relative">اتصل بنا</h2>
+            </div>
+            <form class="col-12 col-lg-7 mx-auto">
+                <div class="mb-3">
+                  <label for="inputName" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" id="inputName" >
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  
+                </div>
+                <div class="mb-3">
+                  <label for="numberInput" class="form-label">Your Number</label>
+                  <input type="number" class="form-control" id="numberInput" >
+                 
+                </div>
+                
+                <button type="submit" class="btn ">Submit</button>
+              </form>
+        </div>
+      </section>
+    <!-- End Contact -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./bootstrap.bundle.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
