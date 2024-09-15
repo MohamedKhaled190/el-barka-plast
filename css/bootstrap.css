@@ -749,7 +749,12 @@ progress {
   margin-right: auto;
   margin-left: auto;
 }
-
+/* تعريف فئة مخصصة للشاشات الصغيرة */
+@media (max-width: 576px) {
+  .full-height-sm {
+      height: 100vh; /* استخدام 100% من ارتفاع العرض */
+  }
+}
 @media (min-width: 576px) {
   .container-sm, .container {
     max-width: 540px;

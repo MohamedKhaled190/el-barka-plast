@@ -38,11 +38,17 @@
               <li class="nav-item   mx-auto">
                 <a class="nav-link mx-1" href="#Product">منتجاتنا</a>
               </li>
-              <li class="nav-item   mx-auto">
-                <a class="nav-link mx-1" href="#">الأسئلة المتكررة</a>
+              <li class="nav-item mx-auto ">
+                <a class="nav-link mx-1" href="#Contact">اتصل بنا</a>
               </li>
               <li class="nav-item mx-auto ">
-                <a class="nav-link mx-1" href="#Contant">اتصل بنا</a>
+                <a class="nav-link mx-1" href="#Services">خدماتنا</a>
+              </li>
+              <li class="nav-item mx-auto ">
+                <a class="nav-link mx-1" href="#ClintOpinions">آراء عملائنا</a>
+              </li>
+              <li class="nav-item mx-auto ">
+                <a class="nav-link mx-1" href="#questions">الاسئلة المتكررة</a>
               </li>
             </ul>
           </div>
@@ -57,6 +63,7 @@
                         <li><span  id="Plastic"></span></li>
                         <li > <span id="Spoons"></span></li>
                         <li > <span id="Forks"></span></li>
+                      
                 </ul>
                </div>
             </div>
@@ -74,34 +81,76 @@
             <div class="porduct-items row gy-4">
                 <div class="col-lg-4 col-md-6 position-relative ">
                     <div class="product-image rounded-2 ">
-                        <img src="images/WhatsApp Image 2024-08-16 at 12.26.38.jpeg" alt="" class="w-100">
+                        <img src="images/WhatsApp Image 2024-08-16 at 12.26.38.jpeg" alt="zip lock bags" class="w-100">
                     </div>
-                    <button class="btn shadow">عرض طلب سعر</button>
+                    <button class="btn shadow btn-style">عرض طلب سعر</button>
                 </div>
                 <div class="col-lg-4 col-md-6 position-relative ">
                     <div class="product-image rounded-2 ">
-                        <img src="images/PHOTO-2024-08-16-12-26-34.jpg" alt="" class="w-100">
+                        <img src="images/PHOTO-2024-08-16-12-26-34.jpg" alt="شريط عنب" class="w-100">
                     </div>
-                    <button class="btn shadow">عرض طلب سعر</button>
+                    <button class="btn shadow btn-style">عرض طلب سعر</button>
                 </div>
                 <div class="col-lg-4 col-md-6 position-relative ">
                     <div class="product-image rounded-2 ">
-                        <img src="images/PHOTO-2024-08-16-12-26-36.jpg" alt="" class="w-100">
+                        <img src="images/PHOTO-2024-08-16-12-26-36.jpg" alt="معالق وشوك بلاستيك" class="w-100">
                     </div>
-                    <button class="btn shadow">عرض طلب سعر</button>
+                    <button class="btn shadow btn-style">عرض طلب سعر</button>
                 </div>
                 <div class="col-lg-4 col-md-6 position-relative ">
                     <div class="product-image rounded-2 ">
-                        <img src="./images/PHOTO-2024-08-16-12-26-36 2.jpg" alt="" class="w-100">
+                        <img src="./images/PHOTO-2024-08-16-12-26-36 2.jpg" alt="اكياس سلوفان بشريطه" class="w-100">
                     </div>
-                    <button class="btn shadow">عرض طلب سعر</button>
+                    <button class="btn shadow btn-style">عرض طلب سعر</button>
                 </div>
             </div>
         </div>
     </section>
     <!-- End our product -->
+     <!-- Start Product  order-->
+     <section id="ProductOrder" class="position-fixed  align-items-center justify-content-center pt-4 " >
+       <div class="orderContent col-12 col-md-9 col-lg-9 bg-white p-4 rounded-3 position-relative full-height-sm">
+           <h2 class="text-center py-2 orderTitle ">عرض طلب سعر</h2>
+            <div class="row align-items-center gy-3">
+                <div class="col-md-7">
+                    <form >
+                        <div class="mb-3">
+                          <label for="inputName" class="form-label">الاسم</label>
+                          <input type="text" class="form-control" id="inputName" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">عنوان البريد الالكتروني</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                          <label for="numberInput" class="form-label">رقم الموبيل</label>
+                          <input type="number" class="form-control" id="numberInput" required>
+                        </div>   
+                        <div class="mb-3">
+                            <label for="inputProduct" class="form-label">اسم المنتج</label>
+                            <input type="text" class="form-control" id="inputProduct" >
+                          </div>     
+                        <div class="mb-3">
+                            <label for="InputMessge" class="form-label ">رسالة</label>
+                            <input type="text" class="form-control pb-md-5" id="InputMessge" >
+                          </div>     
+                        <button type="submit" class="btn btn-style">Submit</button>
+                      </form>
+                   </div>
+                   <div class="col-md-5">
+                    <div class="ProductOrderImage">
+                        <img src="" alt="" class="w-100 rounded-3">
+                    </div>
+                   </div>
+            </div>
+           <div class="closeIcon ">
+            <i class="fa-solid fa-xmark"></i>
+           </div>
+       </div>
+    </section>
+    <!-- End Product Order -->
     <!-- Start Contact -->
-    <section id="Contant" class="py-5"> 
+    <section id="Contact" class="py-5"> 
         <div class="container">
             <div class="product-title text-center mb-4">
                 <h2 class="h1 py-3 position-relative">اتصل بنا</h2>
@@ -114,20 +163,270 @@
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  
                 </div>
                 <div class="mb-3">
                   <label for="numberInput" class="form-label">Your Number</label>
                   <input type="number" class="form-control" id="numberInput" >
-                 
-                </div>
-                
+                </div>        
                 <button type="submit" class="btn ">Submit</button>
               </form>
         </div>
       </section>
     <!-- End Contact -->
+    <!-- Start Clints Opinions-->
+    <section id="ClintOpinions" class="py-5">
+        <div class="container">
+            <div class="product-title text-center mb-5">
+                <h2 class="h1 py-3 position-relative">آراء عملائنا</h2>
+            </div>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner overflow-visible">
+                  <div class="carousel-item active ">
+                  <div class="row gy-4">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="Clint-item rounded-3 px-4 position-relative">
+                            <p class="text-center pt-3 pb-1 option">تشكيله رائعه كدا والاستلام كان في الموعد</p>
+                            <div class="Clint-Data d-flex justify-content-between">
+                                <p class="fw-bold"> <i class="fa-solid fa-user"></i> محمد خالد</p>
+                                <div class="Rate-Icons">
+                                    <i class="fa-regular fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                </div>
+                            </div>
+                            <div class="clint-imgae overflow-hidden">
+                                <img src="./images/bc4fe5e1-da9a-4250-8340-968ed036696d.jpg" alt="" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="Clint-item rounded-3 px-4 position-relative">
+                            <p class="text-center pt-3 pb-1 option">تشكيله رائعه كدا والاستلام كان في الموعد</p>
+                            <div class="Clint-Data d-flex justify-content-between">
+                                <p class="fw-bold"> <i class="fa-solid fa-user"></i> محمد خالد</p>
+                                <div class="Rate-Icons">
+                                    <i class="fa-regular fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                </div>
+                            </div>
+                            <div class="clint-imgae  overflow-hidden">
+                                <img src="./images/unknown.png" alt="" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="Clint-item rounded-3 px-4 position-relative">
+                            <p class="text-center pt-3 pb-1 option">تشكيله رائعه كدا والاستلام كان في الموعد</p>
+                            <div class="Clint-Data d-flex justify-content-between">
+                                <p class="fw-bold"> <i class="fa-solid fa-user"></i> محمد خالد</p>
+                                <div class="Rate-Icons">
+                                    <i class="fa-regular fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                </div>
+                            </div>
+                            <div class="clint-imgae  overflow-hidden">
+                                <img src="./images/unknown.png" alt="" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="row gy-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="Clint-item rounded-3 px-4 position-relative">
+                                <p class="text-center pt-3 pb-1 option">تشكيله رائعه كدا والاستلام كان في الموعد</p>
+                                <div class="Clint-Data d-flex justify-content-between">
+                                    <p class="fw-bold"> <i class="fa-solid fa-user"></i> محمد خالد</p>
+                                    <div class="Rate-Icons">
+                                        <i class="fa-regular fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    </div>
+                                </div>
+                                <div class="clint-imgae  overflow-hidden">
+                                    <img src="./images/unknown.png" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="Clint-item rounded-3 px-4 position-relative">
+                                <p class="text-center pt-3 pb-1 option">تشكيله رائعه كدا والاستلام كان في الموعد</p>
+                                <div class="Clint-Data d-flex justify-content-between">
+                                    <p class="fw-bold"> <i class="fa-solid fa-user"></i> محمد خالد</p>
+                                    <div class="Rate-Icons">
+                                        <i class="fa-regular fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    </div>
+                                </div>
+                                <div class="clint-imgae  overflow-hidden">
+                                    <img src="./images/bc4fe5e1-da9a-4250-8340-968ed036696d.jpg" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="Clint-item rounded-3 px-4 position-relative">
+                                <p class="text-center pt-3 pb-1 option">تشكيله رائعه كدا والاستلام كان في الموعد</p>
+                                <div class="Clint-Data d-flex justify-content-between">
+                                    <p class="fw-bold"> <i class="fa-solid fa-user"></i> محمد خالد</p>
+                                    <div class="Rate-Icons">
+                                        <i class="fa-regular fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    </div>
+                                </div>
+                                <div class="clint-imgae  overflow-hidden">
+                                    <img src="./images/unknown.png" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item ">
+                    <div class="row gy-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="Clint-item rounded-3 px-4 position-relative">
+                                <p class="text-center pt-3 pb-1 option">تشكيله رائعه كدا والاستلام كان في الموعد</p>
+                                <div class="Clint-Data d-flex justify-content-between">
+                                    <p class="fw-bold"> <i class="fa-solid fa-user"></i> محمد خالد</p>
+                                    <div class="Rate-Icons">
+                                        <i class="fa-regular fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    </div>
+                                </div>
+                                <div class="clint-imgae  overflow-hidden">
+                                    <img src="./images/unknown.png" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="Clint-item rounded-3 px-4 position-relative">
+                                <p class="text-center pt-3 pb-1 option">تشكيله رائعه كدا والاستلام كان في الموعد</p>
+                                <div class="Clint-Data d-flex justify-content-between">
+                                    <p class="fw-bold"> <i class="fa-solid fa-user"></i> محمد خالد</p>
+                                    <div class="Rate-Icons">
+                                        <i class="fa-regular fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    </div>
+                                </div>
+                                <div class="clint-imgae  overflow-hidden">
+                                    <img src="./images/bc4fe5e1-da9a-4250-8340-968ed036696d.jpg" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="Clint-item rounded-3 px-4 position-relative">
+                                <p class="text-center pt-3 pb-1 option">تشكيله رائعه كدا والاستلام كان في الموعد</p>
+                                <div class="Clint-Data d-flex justify-content-between">
+                                    <p class="fw-bold"> <i class="fa-solid fa-user"></i> محمد خالد</p>
+                                    <div class="Rate-Icons">
+                                        <i class="fa-regular fa-star-half-stroke" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                                    </div>
+                                </div>
+                                <div class="clint-imgae  overflow-hidden">
+                                    <img src="./images/bc4fe5e1-da9a-4250-8340-968ed036696d.jpg" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!-- End Clints Opinions-->
+    <!-- Start Service -->
+    <section id="Services" class="py-5">
+        <div class="container">
+            <div class="product-title text-center mb-4">
+                <h2 class="h1 py-3 position-relative">خدماتنا</h2>
+            </div>
+            <div class="services-content">
+                
+            </div>
+        </div>
+    </section>
+    <!-- End Service -->
+    <!--Start qustions -->
+    <section id="questions">
+        <div class="container">
+            <div class="product-title text-center mb-4">
+                <h2 class="h1 py-3 position-relative">الاسئلة المتكررة</h2>
+            </div>
+            <div class="row  gy-3 py-4">
+                <div class="col-12 col-md-6 col-lg-6 quspt">
+                    <div class="questionContent rounded-3 px-4 py-2  ">
+                        <p class="text-end question  m-0 mb-2 position-relative fw-bolder">كيف يمكنني الشراء ؟<i class="fa-solid fa-chevron-up mx-1"></i> <i class="fa-solid fa-chevron-down mx-1"></i></p>
+                        <div class="AnserContent text-end py-2">
+                            <h6 class="text-dark">:هناك طرق مختلفه لتقديم طلبك</h6>
+                            <p class="m-0 "> 01009923040 مكالمة هاتفيه او عن طريق الوتساب -</p>
+                            <p class="m-0"> عبر الايميل الرسمي: info@elbarkaplast.com -</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 ">
+                    <div class="questionContent rounded-3 px-4 py-2 ">
+                        <p class="text-end question  m-0 mb-2 position-relative fw-bolder">ما هي المناطق المشموله في خدمه التوصيل ؟ واسعارها؟<i class="fa-solid fa-chevron-up mx-1"></i> <i class="fa-solid fa-chevron-down mx-1"></i></p>
+                        <div class="AnserContent text-end py-2">
+                            <h6 class="text-dark">:خدمة التوصيل تشمل محافظات</h6>
+                            <p class="m-0 "> القاهرة والجيزة :٧٠ جنيه-</p>
+                            <p class="m-0">  الاسكندريه:١٠٠ جنية-</p>
+                            <p class="m-0"> القناة/دلتا:١٠٠ جنية-</p>
+                            <p class="m-0"> الصعيد: ١٠٠ جنية-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 ">
+                    <div class="questionContent rounded-3 px-4 py-2  ">
+                        <p class="text-end question  m-0 mb-2 position-relative fw-bolder">ما هي طرق الدفع المتاحة<i class="fa-solid fa-chevron-up mx-1"></i> <i class="fa-solid fa-chevron-down mx-1"></i></p>
+                        <div class="AnserContent text-end py-2">
+                            <h6 class="text-dark">:طرق الدفع</h6>
+                            <p class="m-0 "> الدفع عند الاستلام-</p>
+                            <p class="m-0"> تحويل فودافون كاش او انستا باي-</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="questionContent rounded-3 px-4 py-2  ">
+                        <p class="text-end question  m-0 mb-2 position-relative fw-bolder"> كم تستغرق عمليه التوصيل<i class="fa-solid fa-chevron-up mx-1"></i> <i class="fa-solid fa-chevron-down mx-1"></i></p>
+                        <div class="AnserContent text-end py-2">
+                            <p class="m-0 "> تستغرق مده توصيل الاوردر ٧ ايام من تاريخ الطلب </p>
+                            <p class="m-0 express fw-bolder"> اسال عن خدمه اوردر اكسبريس-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End qustions -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./jquery-3.7.1.min.js"></script>
     <script src="./bootstrap.bundle.min.js"></script>
   <script src="./main.js"></script>
 </body>
