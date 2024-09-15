@@ -231,6 +231,38 @@ color: var(--ColorWhite);
     z-index: 2000;
 }
 /* End Clints Opinions */
+/* Start Service */
+/* From Uiverse.io by dylanharriscameron */ 
+#Services .service-content p{
+    color: #6e6e6e;
+  }
+  
+  #Services .bg p {
+  color: var();
+  }
+  
+  #Services .blob {
+   position: absolute;
+   width: 70px;
+   height: 70px;
+   background-color: var(--MainColor2);
+   border-radius: 50%;
+   color: var(--MainColor1);
+   left: 0px;
+   top: 0px;
+   transform: translate(-20%, -20%);
+  }
+  #Services .service-content{
+  border-right: 1px solid var(--MainColor1);
+  }
+  
+ 
+  
+/* End Service */
+
+
+
+
 /* Start questions */
 #questions .questionContent{
     /* background-color: var(--BG-Color); */
