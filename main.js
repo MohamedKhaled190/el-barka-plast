@@ -65,13 +65,29 @@ document.addEventListener('keyup',function(e){
    e.key == 'Escape'?closemodal():''
 })
 // start Questions 
-$('#questions .questionContent').on('click',function(e){
-    const slide = document.querySelectorAll('#questions .AnserContent')
-    const ele = $( e.target).next()[0]
-    if(ele.style.display == 'block'){
-        $(e.target).next().slideUp(0)
-    }else{ 
-        $(slide).slideUp(0)
-        $(e.target).next().slideDown(0)
-    }
-    })
+let questionContent = Array.from(document.querySelectorAll('.questionContent'));
+let AnserContent = Array.from(document.querySelectorAll('.AnserContent'));
+let faChevronUp = Array.from(document.querySelectorAll('.fa-chevron-up'));
+let faChevronDown = Array.from(document.querySelectorAll('.fa-chevron-down'));
+
+for (let i = 0; i < questionContent.length; i++) {
+    questionContent[i].addEventListener('click', function(e) {
+
+        AnserContent.forEach((content, index) => {
+            if (index !== i) {
+                content.classList.add('d-none');
+                faChevronUp[index].style.display = 'none';
+                faChevronDown[index].style.display = 'inline';
+            }
+        });
+        AnserContent[i].classList.toggle('d-none');
+        if (AnserContent[i].classList.contains('d-none')) {
+            faChevronUp[i].style.display = 'none';
+            faChevronDown[i].style.display = 'inline';
+        } else {
+            faChevronUp[i].style.display = 'inline';
+            faChevronDown[i].style.display = 'none';
+        }
+    });
+}
+

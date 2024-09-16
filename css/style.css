@@ -2,6 +2,7 @@
     padding: 0px;
     margin: 0px;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .typed-cursor {
@@ -313,7 +314,7 @@ color: var(--ColorWhite);
 #questions .questionContent .AnserContent{
     border-top: 1px solid rgb(219, 219, 219);
     color: #6e6e6e;
-    display: none;
+   
 }
 .fa-chevron-up{
     display: none;
