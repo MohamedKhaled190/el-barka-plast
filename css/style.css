@@ -1,11 +1,15 @@
 *{
     padding: 0px;
     margin: 0px;
-
     text-decoration: none;
 }
+
 .typed-cursor {
     display: none;
+  }
+  .cr{
+    cursor: pointer;
+    
   }
 .btn-style{
     background-color: var(--MainColor1);
@@ -18,7 +22,7 @@ color: var(--ColorWhite);
 body{
     font-family: "Montserrat", sans-serif;
 }
-h2, .navbar-nav .nav-link{
+h2, .navbar-nav .nav-link , h4{
     font-family: "Aref Ruqaa", serif;
 }
 /* colors */
@@ -92,6 +96,41 @@ header .contnet h1{
     font-weight: 300;
 }
 /* End Header */
+/* start About us */
+#About .AboutImage::after{
+    position: absolute;
+    content: "";
+    width: 40%;
+   
+    background-color: var(--MainColor2);
+    top: -15%;
+    bottom: -15%;
+    left: -5%;
+    z-index: -2;
+}
+#About .AboutImage i{
+    color: var(--MainColor1);
+    font-size: 40px;
+    position: absolute;
+    top: -15%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+}
+#About .AboutHistory{
+    font-size: 50px;
+}
+#About .AboutHistory::after{
+    position: absolute;
+    content: "";
+    height: 7px;
+    width: 40px;
+    background-color: var(--MainColor1);
+    bottom: 0px;
+    right: 5px;
+
+}
+
+/* End About us */
 /* Start Contact */
 #Contant i{
     width: 3.75rem;
@@ -140,6 +179,7 @@ bottom: 0px;
 left: 50%;
 transform: translateX(-50%);
 }
+
 .product-title h2::before{
 position: absolute;
 content: "";
@@ -259,10 +299,6 @@ color: var(--ColorWhite);
  
   
 /* End Service */
-
-
-
-
 /* Start questions */
 #questions .questionContent{
     /* background-color: var(--BG-Color); */
@@ -284,5 +320,30 @@ color: var(--ColorWhite);
 }
 #questions .questionContent .express{
     color: var(--MainColor1);
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
 }
 /* End questions */
+/* Start Footer */
+footer{
+    background-color: var(--MainColor2);
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-top: 1px solid var(--MainColor1);
+}
+footer h4{
+    font-size: 50px;
+    color: var(--MainColor1);
+}
+footer i{
+    color: var(--MainColor1);
+}
+footer iframe{
+    border: 1px solid  var(--MainColor1);
+    width: 100%;
+    height: 80%;
+}
+footer .times{
+    border: 1px solid var(--BG-Color);
+}
+/* Start Footer */
