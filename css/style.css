@@ -94,7 +94,7 @@ header {
     background-size: cover;
     background-attachment: fixed;
 }
-
+/* 
 #options {
     list-style: inside;
 }
@@ -112,7 +112,7 @@ header .contnet h1 {
     color: var(--MainColor2);
     font-size: 4rem;
     font-weight: 300;
-}
+} */
 
 /* End Header */
 /* start About us */
@@ -342,8 +342,22 @@ input {
     border-right: 1px solid var(--MainColor1);
 }
 
-
-
+.service-content {
+    transition: transform 0.4s ease-in-out;
+    transform: scale(0.98)
+}
+.service-content:hover {
+    transform: scale(1.1); /* Zoom out effect */
+  }
+  
+.blob {
+    transition: transform 0.1s ease-in-out;
+  }
+  
+.service-content:hover .blob {
+    transform: scale(1.7); /* Optional blob effect on hover */
+  }
+  
 /* End Service */
 /* Start questions */
 #questions .questionContent {
