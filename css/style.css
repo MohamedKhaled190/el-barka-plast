@@ -1,8 +1,10 @@
 * {
-    padding: 0px;
+    padding: 5px;
     margin: 0px;
     text-decoration: none;
     box-sizing: border-box;
+    border-radius: 20px;
+
 }
 
 .typed-cursor {
@@ -25,13 +27,14 @@
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Ara Alm Bon", sans-serif;
 }
 
 h2,
 .navbar-nav .nav-link,
 h4 {
-    font-family: "Aref Ruqaa", serif;
+    font-family: "Ara Alm Bon", serif;
+
 }
 
 /* colors */
@@ -46,14 +49,17 @@ h4 {
 
 /* Start Nav */
 .navbar {
-    position: fixed;
-    width: 100%;
+    right: 208px;
+    left: 130px;
+    width: 64%;
+    height: 11%;
     z-index: 100000;
     background-color: #ffffffdc;
 }
 
 .navbar-nav .nav-link {
     position: relative;
+
 }
 
 .navbar-nav .nav-link.active {
@@ -65,7 +71,7 @@ h4 {
     position: absolute;
     content: "";
     width: 0%;
-    height: 2px;
+    height: px;
     bottom: 0px;
     left: 0px;
     background-color: var(--ColorBlack);
@@ -89,11 +95,11 @@ h4 {
 /* Start Header */
 header {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/c837a6_edd5476d0e2342f1a70eef51d5b92051~mv2.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
+
 /* 
 #options {
     list-style: inside;
@@ -139,6 +145,7 @@ header .contnet h1 {
 
 #About .AboutHistory {
     font-size: 50px;
+
 }
 
 #About .AboutHistory::after {
@@ -154,7 +161,7 @@ header .contnet h1 {
 
 /* End About us */
 /* Start Contact */
-#Contant i {
+#ContactUs i {
     width: 3.75rem;
     height: 3.75rem;
     border-radius: 50%;
@@ -346,24 +353,26 @@ input {
     transition: transform 0.4s ease-in-out;
     transform: scale(0.98)
 }
+
 .service-content:hover {
-    transform: scale(1.1); /* Zoom out effect */
-  }
-  
+    transform: scale(1.1);
+    /* Zoom out effect */
+}
+
 .blob {
     transition: transform 0.1s ease-in-out;
-  }
-  
+}
+
 .service-content:hover .blob {
-    transform: scale(1.7); /* Optional blob effect on hover */
-  }
-  
+    transform: scale(1.7);
+    /* Optional blob effect on hover */
+}
+
 /* End Service */
 /* Start questions */
 #questions .questionContent {
     /* background-color: var(--BG-Color); */
     outline: 1px solid rgb(6 21 46 / 34%)
-
 }
 
 #questions .questionContent i {
