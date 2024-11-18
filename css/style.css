@@ -496,31 +496,123 @@ input {
 }
 
 /* End questions */
+
 /* Start Footer */
-footer {
+
+.footer-section {
     background-color: var(--MainColor2);
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
-    border-top: 1px solid var(--MainColor1);
+    color: var(--ColorWhite);
+    padding: 40px 20px;
+    position: relative;
+    text-align: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 }
 
-footer h4 {
-    font-size: 50px;
+/* Footer Container */
+.footer-section {
+    background-color: var(--MainColor2);
+    color: var(--ColorWhite);
+    padding: 40px 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    font-family: "Ara Alm Bon", sans-serif;
+}
+
+/* Footer Container */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    text-align: center;
+}
+
+/* Contact Section */
+.footer-contact {
+    flex: 1;
+}
+
+.footer-contact h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
     color: var(--MainColor1);
 }
 
-footer i {
+.footer-contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-contact ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.footer-contact ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--ColorWhite);
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.footer-contact ul li a:hover {
     color: var(--MainColor1);
 }
 
-footer iframe {
-    border: 1px solid var(--MainColor1);
-    width: 100%;
-    height: 80%;
+.footer-contact ul li i {
+    font-size: 1.5rem;
+    color: var(--MainColor1);
 }
 
-footer .times {
-    border: 1px solid var(--BG-Color);
+/* Location Section */
+.footer-location {
+    flex: 1;
 }
 
-/* Start Footer */
+.footer-location h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--MainColor1);
+}
+
+.map-container {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Divider */
+.footer-divider {
+    height: 2px;
+    background: linear-gradient(to left , var(--MainColor1), var(--MainColor2));
+    margin: 20px auto;
+    width: 85%;
+}
+
+/* Copyright Text */
+.footer-copyright {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: var(--ColorWhite);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contact,
+    .footer-location {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* End Footer */
