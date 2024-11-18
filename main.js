@@ -1,30 +1,43 @@
-function animation(id,time,item){
-    setTimeout(function() {
+var typed = new Typed('#typing-effect', {
+    strings: ['رواد في جودة التغليف منذ عام 2011'],
+    typeSpeed: 120, // Speed of typing
+    backSpeed: 90, // Speed of deleting (if needed)
+    loop: true,
+    showCursor: true, // Show blinking cursor
+    cursorChar: '|',
+     // Set to true if you want it to repeat
+});
+
+
+// Add this script to monitor the scroll position
+
+function animation(id, time, item) {
+    setTimeout(function () {
         new Typed(`#${id}`, {
-          strings: [`${item}`],
-          typeSpeed: 100,
-          backSpeed: 100,
-          loop: false,
-          loopCount: Infinity,
+            strings: [`${item}`],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: false,
+            loopCount: Infinity,
         });
-      }, time);
-    }
+    }, time);
+}
 
 animation('Plastic', 500, 'Plastic')
 animation('Spoons', 1500, 'Spoons')
 animation('Forks', 2500, 'Forks')
 
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     var navbar = document.getElementById('navbar-example');
-    if (window.scrollY > 700) { 
-    navbar.style.backgroundColor = '#fff';
-    }else{
-    navbar.style.backgroundColor = '#ffffffdc';
+    if (window.scrollY > 700) {
+        navbar.style.backgroundColor = '#fff';
+    } else {
+        navbar.style.backgroundColor = '#ffffffdc';
     }
 });
 
-// 
+
 
 
 let imageList = Array.from(document.querySelectorAll('.product-image img'))
@@ -35,34 +48,30 @@ let inputProduct = document.getElementById('inputProduct')
 let closeIcon = document.querySelector('.closeIcon i')
 let ProductOrderImage = document.querySelector('.ProductOrderImage img')
 
-console.log(closeIcon);
 // desplay the current image
 for (let i = 0; i < buttonList.length; i++) {
-    buttonList[i].addEventListener('click', function(e){
+    buttonList[i].addEventListener('click', function (e) {
         ProductOrder.classList.add('d-flex')
         let imagesrc = imageList[i].getAttribute('src')
         ProductOrderImage.src = `./${imagesrc}`
         inputProduct.value = imageList[i].alt
 
-
-        
     })
 }
 
 
 
 // close the box modal
-
-function closemodal(){
+function closemodal() {
     ProductOrder.classList.remove('d-flex')
 }
 closeIcon.addEventListener('click', closemodal)
-document.addEventListener('click',function(e){
-e.target== ProductOrder? closemodal():''
+document.addEventListener('click', function (e) {
+    e.target == ProductOrder ? closemodal() : ''
 })
 
-document.addEventListener('keyup',function(e){
-   e.key == 'Escape'?closemodal():''
+document.addEventListener('keyup', function (e) {
+    e.key == 'Escape' ? closemodal() : ''
 })
 // start Questions 
 let questionContent = Array.from(document.querySelectorAll('.questionContent'));
@@ -71,7 +80,7 @@ let faChevronUp = Array.from(document.querySelectorAll('.fa-chevron-up'));
 let faChevronDown = Array.from(document.querySelectorAll('.fa-chevron-down'));
 
 for (let i = 0; i < questionContent.length; i++) {
-    questionContent[i].addEventListener('click', function(e) {
+    questionContent[i].addEventListener('click', function (e) {
 
         AnserContent.forEach((content, index) => {
             if (index !== i) {
@@ -89,5 +98,8 @@ for (let i = 0; i < questionContent.length; i++) {
             faChevronDown[i].style.display = 'none';
         }
     });
+
 }
+
+
 
